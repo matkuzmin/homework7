@@ -15,12 +15,11 @@ public class Main {
         System.out.println("Задача 1");
         int money = 15000;
         int time = 0;
-        int total = 0;
-        while (total <= 2_459_000) {
-            money = money + 15000 / 100;
-            total = total + money;
-            time = time + 1;
-            System.out.println("Месяц " + time + ", сумма накоплений равна " + total + " рублей");
+        int sum = 0;
+        while (sum <= 2_459_000) {
+            sum+=money;
+            time++;
+            System.out.println("Месяц " + time + ", сумма накоплений равна " + sum + " рублей");
         }
     }
 
